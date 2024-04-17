@@ -13,7 +13,7 @@ const Sidebar = () => {
       <div className="flex flex-col items-center justify-center md:-mt-12 gap-3 w-full">
         <LogoImage />
 
-        <div className="text-zinc-200 text-center px-3">
+        <div className="text-zinc-200 text-center px-4">
           Probably writing Typescript at work & GoLang at home.
         </div>
 
