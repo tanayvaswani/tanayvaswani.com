@@ -1,6 +1,6 @@
 import Logo from "@/components/logos/logo";
-import SidebarRoutes from "./sidebar-routes";
 import LogoImage from "../logos/logo-image";
+import SidebarRoutes from "./sidebar-routes";
 import Socials from "../socials";
 
 const Sidebar = () => {
@@ -10,8 +10,12 @@ const Sidebar = () => {
         <Logo />
       </div>
 
-      <div className="flex flex-col items-center justify-center md:-mt-16 gap-4 w-full">
+      <div className="flex flex-col items-center justify-center md:-mt-12 gap-3 w-full">
         <LogoImage />
+
+        <div className="text-zinc-200 text-center px-3">
+          Probably writing Typescript at work & GoLang at home.
+        </div>
 
         <SidebarRoutes />
       </div>
