@@ -11,3 +11,6 @@
 - [ ] framer motion to animate stuff on page open
 - [ ] Add a favicon
 - [ ] Add site config
+- [ ] Scroll to top
+- [ ] Some good dp
+- [ ] 
