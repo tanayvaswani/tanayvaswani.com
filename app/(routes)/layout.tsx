@@ -7,7 +7,9 @@ const RoutesLayout = ({ children }: { children: React.ReactNode }) => {
         <Sidebar />
       </div>
 
-      <div className="md:pl-72 h-full">{children}</div>
+      <div className="h-full md:max-w-screen-2xl md:mx-auto">
+        <div className="pl-72">{children}</div>
+      </div>
     </div>
   );
 };
