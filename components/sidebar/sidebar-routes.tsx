@@ -1,7 +1,5 @@
 "use client";
 
-import { Home } from "lucide-react";
-
 import SidebarItem from "./sidebar-item";
 
 const routes = [
