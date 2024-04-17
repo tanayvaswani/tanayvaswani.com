@@ -8,8 +8,7 @@ import { ThemeProvider } from "@/components/providers/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 const pop = Montserrat({
-  // weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  weight: ["100", "300", "500", "700", "900"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
 
