@@ -26,11 +26,6 @@ const socialsArray = [
     name: "Email",
     href: "mailto:vaswani.tanay9@gmail.com",
   },
-  {
-    icon: FaYoutube,
-    name: "YouTube",
-    href: "https://youtube.com/tanayvaswani",
-  },
 ];
 
 const Socials = () => {

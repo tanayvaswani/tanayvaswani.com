@@ -4,9 +4,9 @@ const LogoImage = () => {
   return (
     <div>
       <Image
-        src={"/tanay.jpg"}
+        src={"/tanayvaswani.jpg"}
         alt={"tanay"}
-        className="rounded-full"
+        className="rounded-full border-neutral-600 border-2"
         width={200}
         height={200}
       />
