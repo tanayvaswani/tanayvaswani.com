@@ -40,7 +40,7 @@ const Socials = () => {
         <Link
           key={index}
           href={social.href}
-          className="text-zinc-400 hover:text-blue-600 transition-all"
+          className="text-zinc-400 hover:text-zinc-200 transition-all"
           target="_blank"
         >
           <social.icon className="h-6 w-6" />
