@@ -1,45 +1,136 @@
-import { LogsCardProps } from "./logs-card";
+import { TLogsCard } from "./logs-card";
 
-export const logs: LogsCardProps[] = [
+export const logs: TLogsCard[] = [
   {
     title: "Exploring the Mysteries of the Deep Sea",
     description:
       "A thrilling expedition into the depths of the ocean to uncover its secrets.",
-    contentS:
+    content:
       "Join us on an unforgettable journey as we delve into the mysteries of the deep sea. From bioluminescent creatures to undiscovered species, prepare to be amazed by the wonders lurking beneath the waves.",
-    contentL:
-      "Our expedition will take us to remote locations where few have ventured before. Through state-of-the-art technology and expert guidance, we will witness firsthand the incredible biodiversity of the ocean floor. From the eerie depths of underwater caves to the vibrant coral reefs teeming with life, every dive promises a new discovery. Don't miss this opportunity to be a part of groundbreaking scientific exploration!",
     date: "April 2024",
-    href: "",
   },
   {
     title: "Exploring the Mysteries of the Deep Sea",
     description:
       "A thrilling expedition into the depths of the ocean to uncover its secrets.",
-    contentS:
+    content:
       "Join us on an unforgettable journey as we delve into the mysteries of the deep sea. From bioluminescent creatures to undiscovered species, prepare to be amazed by the wonders lurking beneath the waves.",
-    contentL:
-      "Our expedition will take us to remote locations where few have ventured before. Through state-of-the-art technology and expert guidance, we will witness firsthand the incredible biodiversity of the ocean floor. From the eerie depths of underwater caves to the vibrant coral reefs teeming with life, every dive promises a new discovery. Don't miss this opportunity to be a part of groundbreaking scientific exploration!",
     date: "March 2024",
-    href: "",
   },
   {
     title: "Exploring the Mysteries of the Deep Sea",
     description:
       "A thrilling expedition into the depths of the ocean to uncover its secrets.",
-    contentS:
+    content:
       "Join us on an unforgettable journey as we delve into the mysteries of the deep sea. From bioluminescent creatures to undiscovered species, prepare to be amazed by the wonders lurking beneath the waves.",
-    contentL:
-      "Our expedition will take us to remote locations where few have ventured before. Through state-of-the-art technology and expert guidance, we will witness firsthand the incredible biodiversity of the ocean floor. From the eerie depths of underwater caves to the vibrant coral reefs teeming with life, every dive promises a new discovery. Don't miss this opportunity to be a part of groundbreaking scientific exploration!",
-    date: "2024-07-15",
-    href: "",
+    date: "February 2024",
   },
   {
     title: "",
     description: "",
-    contentS: "",
-    contentL: "",
-    date: "",
-    href: "",
+    content: "",
+    date: "January 2024",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "December 2023",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "November 2023",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "October 2023",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "September 2023",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "August 2023",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "July 2023",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "June 2023",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "May 2023",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "April 2023",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "March 2023",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "Februrary 2023",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "January 2023",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "December 2022",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "November 2022",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "October 2022",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "September 2022",
+  },
+  {
+    title: "",
+    description: "",
+    content: "",
+    date: "August 2022",
   },
 ];

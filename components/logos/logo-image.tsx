@@ -6,7 +6,7 @@ const LogoImage = () => {
       <Image
         src={"/tanayvaswani.jpg"}
         alt={"tanay"}
-        className="rounded-full border-neutral-600 border-2"
+        className="rounded-full border"
         width={200}
         height={200}
       />

@@ -1,19 +1,17 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
 
-export type LogsCardProps = {
+export type TLogsCard = {
   title: string;
   description: string;
-  contentS: string;
-  contentL: string;
+  content: string;
   date: string;
-  href: string;
 };
 
-const LogsCard = ({ title, contentS, date, href }: LogsCardProps) => {
+const LogsCard = ({ title, content, date }: TLogsCard) => {
   return (
     <div className="bg-transparent border-none flex flex-col gap-3">
-      <div className="flex items-start justify-between w-full">
+      <div className="flex flex-col md:flex-row items-start justify-between w-full">
         <h1 className="text-2xl md:text-3xl font-semibold text-zinc-300">
           {title}
         </h1>
@@ -22,10 +20,10 @@ const LogsCard = ({ title, contentS, date, href }: LogsCardProps) => {
       </div>
 
       <p className="text-zinc-400 md:max-w-screen-lg text-lg md:text-xl">
-        {contentS}
+        {content}
       </p>
 
-      <div>
+      {/* <div>
         <Link
           href={href}
           className="flex items-center justify-start gap-2 text-blue-400 hover:text-zinc-200 transition-all group"
@@ -33,7 +31,7 @@ const LogsCard = ({ title, contentS, date, href }: LogsCardProps) => {
           See more{" "}
           <FaArrowRightLong className="mt-1 group-hover:ml-1 transition-all group-hover:text-zinc-200" />
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
