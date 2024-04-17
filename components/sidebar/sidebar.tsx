@@ -10,8 +10,12 @@ const Sidebar = () => {
       </div>
 
       <div className="flex flex-col w-full">
+        {/* <LogoImage /> */}
+
         <SidebarRoutes />
       </div>
+
+      {/* <Socials /> */}
 
       <div className="text-xs text-zinc-600 text-center">
         © 2024 Tanay Vaswani. All rights reserved.
