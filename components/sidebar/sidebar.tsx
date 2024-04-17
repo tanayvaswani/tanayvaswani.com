@@ -1,6 +1,6 @@
-import Logo from "@/components/logo";
-
+import Logo from "@/components/logos/logo";
 import SidebarRoutes from "./sidebar-routes";
+import LogoImage from "../logos/logo-image";
 
 const Sidebar = () => {
   return (
@@ -9,8 +9,8 @@ const Sidebar = () => {
         <Logo />
       </div>
 
-      <div className="flex flex-col w-full">
-        {/* <LogoImage /> */}
+      <div className="flex flex-col items-center justify-center -mt-24 gap-4 w-full">
+        <LogoImage />
 
         <SidebarRoutes />
       </div>
