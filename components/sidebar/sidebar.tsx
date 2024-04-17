@@ -1,6 +1,7 @@
 import Logo from "@/components/logos/logo";
 import SidebarRoutes from "./sidebar-routes";
 import LogoImage from "../logos/logo-image";
+import Socials from "../socials";
 
 const Sidebar = () => {
   return (
@@ -9,16 +10,17 @@ const Sidebar = () => {
         <Logo />
       </div>
 
-      <div className="flex flex-col items-center justify-center -mt-24 gap-4 w-full">
+      <div className="flex flex-col items-center justify-center md:-mt-16 gap-4 w-full">
         <LogoImage />
 
         <SidebarRoutes />
       </div>
 
-      {/* <Socials /> */}
-
-      <div className="text-xs text-zinc-600 text-center">
-        © 2024 Tanay Vaswani. All rights reserved.
+      <div className="flex flex-col items-center justify-center gap-y-4">
+        <Socials />
+        <div className="text-xs text-zinc-600 text-center">
+          © 2024 Tanay Vaswani. All rights reserved.
+        </div>
       </div>
     </div>
   );
