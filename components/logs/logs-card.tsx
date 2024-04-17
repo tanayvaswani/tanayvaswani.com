@@ -1,15 +1,6 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../ui/card";
-
 export type LogsCardProps = {
   title: string;
   description: string;
@@ -19,14 +10,7 @@ export type LogsCardProps = {
   href: string;
 };
 
-const LogsCard = ({
-  title,
-  description,
-  contentS,
-  contentL,
-  date,
-  href,
-}: LogsCardProps) => {
+const LogsCard = ({ title, contentS, date, href }: LogsCardProps) => {
   return (
     <div className="bg-transparent border-none flex flex-col gap-3">
       <div className="flex items-start justify-between w-full">

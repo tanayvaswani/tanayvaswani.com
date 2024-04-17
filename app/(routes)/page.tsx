@@ -7,6 +7,8 @@ const HomePage = () => {
       {logs.map((log, index) => (
         <LogsCard key={index} {...log} />
       ))}
+
+      {/* <MoveToTop /> */}
     </div>
   );
 };
