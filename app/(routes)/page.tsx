@@ -3,7 +3,7 @@ import { logs } from "@/components/logs/logs-content";
 
 const HomePage = () => {
   return (
-    <div className="px-6 py-12 flex flex-col items-center justify-center w-full">
+    <div className="px-6 py-12 flex flex-col items-center justify-center w-full gap-8">
       {logs.map((log, index) => (
         <LogsCard key={index} {...log} />
       ))}
