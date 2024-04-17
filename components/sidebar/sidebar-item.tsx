@@ -1,7 +1,15 @@
 "use client";
 
-import { cn } from "@/lib/utils";
 import { usePathname, useRouter } from "next/navigation";
+
+import { cn } from "@/lib/utils";
+import { Roboto } from "next/font/google";
+
+const pop = Roboto({
+  // weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["100", "300", "500", "700", "900"],
+  subsets: ["latin"],
+});
 
 type SidebarItemProps = {
   label: string;
@@ -30,7 +38,12 @@ const SidebarItem = ({ label, href }: SidebarItemProps) => {
         isActive && "text-blue-600 hover:text-blue-600"
       )}
     >
-      <div className="flex items-center py-1 w-full justify-center">
+      <div
+        className={cn(
+          "flex items-center py-1 w-full justify-center tracking-wide text-lg",
+          pop.className
+        )}
+      >
         {label}
       </div>
     </button>
