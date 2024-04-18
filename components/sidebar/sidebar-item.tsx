@@ -4,6 +4,7 @@ import { usePathname, useRouter } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 import { Roboto } from "next/font/google";
+import { ArrowBigRight } from "lucide-react";
 
 const pop = Roboto({
   // weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -35,7 +36,8 @@ const SidebarItem = ({ label, href }: SidebarItemProps) => {
       onClick={onClick}
       className={cn(
         "flex items-center text-zinc-400 font-[500] transition-all hover:text-zinc-200",
-        isActive && "text-blue-600 hover:text-blue-600"
+        isActive &&
+          "text-blue-600 hover:text-blue-600 bg-blue-600/20 rounded-lg"
       )}
     >
       <div

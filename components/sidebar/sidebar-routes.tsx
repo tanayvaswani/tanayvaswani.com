@@ -27,7 +27,7 @@ const routes = [
 
 const SidebarRoutes = () => {
   return (
-    <div className="flex flex-col w-full gap-y-2 mt-4 mb-8">
+    <div className="flex flex-col w-full gap-y-2 mt-4 mb-8 px-4">
       {routes.map((route, index) => (
         <SidebarItem key={index} label={route.label} href={route.href} />
       ))}
