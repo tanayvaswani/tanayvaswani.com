@@ -30,6 +30,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <div className="fixed top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.05),rgba(255,255,255,0))]"></div>
+
           <Navbar />
 
           <div className="px-6 md:px-0 md:max-w-screen-md md:mx-auto py-20 md:py-32">
