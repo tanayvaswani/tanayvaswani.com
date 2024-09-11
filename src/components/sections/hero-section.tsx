@@ -11,11 +11,15 @@ const HeroSection = () => {
           <br />
           <br />
           I’m currently at{" "}
-          <Link href={"https://turboml.com"} target="_blank">
+          <Link
+            href={"https://turboml.com"}
+            target="_blank"
+            className="text-[#FE6A34] font-medium"
+          >
             TurboML, Inc.
           </Link>{" "}
           working on a Machine Learning Platform Reinvinted for Real-Time.
-          Previously, I occasionally contribute in commercial & free Open-Source
+          Previously, I used to contribute in commercial & free Open-Source
           projects.
           <br />
           <br />
@@ -28,7 +32,7 @@ const HeroSection = () => {
           alt="tanay.jpeg"
           width={280}
           height={280}
-          className="rounded-md border-double border-4 shadow-sm "
+          className="rounded-md border-double border-4 shadow-sm"
         />
       </div>
 

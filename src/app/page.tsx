@@ -3,7 +3,7 @@ import QuoteComponent from "@/components/sections/quote-section";
 
 const HomePage = () => {
   return (
-    <main className="flex flex-col items-start gap-8 md:gap-16">
+    <main className="flex flex-col items-start gap-8 md:gap-12">
       <HeroSection />
       <QuoteComponent
         quote={
