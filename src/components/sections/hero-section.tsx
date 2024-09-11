@@ -28,11 +28,35 @@ const HeroSection = () => {
           alt="tanay.jpeg"
           width={280}
           height={280}
-          className="rounded-md border-4 shadow-sm"
+          className="rounded-md border-double border-4 shadow-sm "
         />
       </div>
 
-      <div></div>
+      <div>
+        <p>
+          I’m currently learning about Machine Learning Systems at Scale.
+          <br />
+          You can find me most active on{" "}
+          <Link
+            href={"https://x.com/iTanayVaswani"}
+            target="_blank"
+            className="text-blue-600 font-medium"
+          >
+            Twitter
+          </Link>
+          .
+          <br />
+          I’m best reached via{" "}
+          <Link
+            href={"mailto:vaswani.tanay9@gmail.com"}
+            target="_blank"
+            className="text-blue-600 font-medium"
+          >
+            Email
+          </Link>
+          .
+        </p>
+      </div>
     </div>
   );
 };
