@@ -1,8 +1,10 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 import { Button } from "../ui/button";
+import { cn } from "@/lib/utils";
 
 const navigationRoutes = [
   {
@@ -29,10 +31,21 @@ const navigationRoutes = [
 ];
 
 const NavigationMenu = () => {
+  const pathname = usePathname();
+  const currentRoute = pathname.split("/")[1];
+
   return (
-    <div className="flex items-center justify-center gap-2">
+    <div className="flex items-center justify-center gap-1">
       {navigationRoutes.map((route, index) => (
-        <Button key={index} variant={"navigation"} asChild>
+        <Button
+          key={index}
+          variant={"navigation"}
+          className={cn(
+            currentRoute == route.path.split("/")[1] &&
+              "bg-neutral-100 text-blue-600"
+          )}
+          asChild
+        >
           <Link href={route.path} target={route.isExternal ? "_blank" : ""}>
             {route.title}
           </Link>
