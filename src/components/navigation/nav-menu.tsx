@@ -35,7 +35,7 @@ const NavigationMenu = () => {
   const currentRoute = pathname.split("/")[1];
 
   return (
-    <div className="flex items-center justify-center gap-1">
+    <div className="hidden md:flex items-center justify-center gap-1">
       {navigationRoutes.map((route, index) => (
         <Button
           key={index}
