@@ -4,7 +4,7 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <div className="flex flex-col items-start w-full gap-6">
-      <div className="flex items-start justify-between gap-6 w-full">
+      <div className="flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-6 w-full">
         <p className="">
           I’m Tanay Vaswani, an undergrad with a passion for Software
           Engineering, Machine Learning Systems & Infrastructure at scale.
