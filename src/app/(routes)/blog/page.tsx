@@ -1,7 +1,7 @@
-import ComingSoon from "@/components/coming-soon";
+import BlogSection from "@/components/sections/blog-section";
 
 const BlogPage = () => {
-  return <ComingSoon />;
+  return <BlogSection />;
 };
 
 export default BlogPage;
