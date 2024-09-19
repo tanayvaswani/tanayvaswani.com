@@ -1,10 +1,19 @@
 "use client";
 
+import { Ellipsis } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const navigationRoutes = [
   {
@@ -55,22 +64,36 @@ const NavigationMenu = () => {
       </div>
 
       <div className="md:hidden flex flex-col items-center justify-center gap-1">
-        {navigationRoutes.map((route, index) => (
-          <Button
-            key={index}
-            variant={"navigation"}
-            className={cn(
-              currentRoute == route.path.split("/")[1] &&
-                "bg-neutral-100 text-blue-600"
-            )}
-            asChild
-          >
-            <Link href={route.path} target={route.isExternal ? "_blank" : ""}>
-              {route.title}
-            </Link>
-          </Button>
-        ))}
+        <DropdownMenu>
+          <DropdownMenuTrigger>
+            <Ellipsis className="h-6 w-6 text-neutral-700" />
+          </DropdownMenuTrigger>
+
+          <DropdownMenuContent className="mx-4 w-[60vw]">
+            <DropdownMenuLabel>Navigate</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            {navigationRoutes.map((route, index) => (
+              <DropdownMenuItem
+                key={index}
+                className={cn(
+                  currentRoute == route.path.split("/")[1] &&
+                    "bg-neutral-100 text-blue-600"
+                )}
+                asChild
+              >
+                <Link
+                  href={route.path}
+                  target={route.isExternal ? "_blank" : ""}
+                >
+                  {route.title}
+                </Link>
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
+
+      <div className="md:hidden flex flex-col items-center justify-center gap-1"></div>
     </div>
   );
 };
