@@ -35,22 +35,42 @@ const NavigationMenu = () => {
   const currentRoute = pathname.split("/")[1];
 
   return (
-    <div className="hidden md:flex items-center justify-center gap-1">
-      {navigationRoutes.map((route, index) => (
-        <Button
-          key={index}
-          variant={"navigation"}
-          className={cn(
-            currentRoute == route.path.split("/")[1] &&
-              "bg-neutral-100 text-blue-600"
-          )}
-          asChild
-        >
-          <Link href={route.path} target={route.isExternal ? "_blank" : ""}>
-            {route.title}
-          </Link>
-        </Button>
-      ))}
+    <div>
+      <div className="hidden md:flex items-center justify-center gap-1">
+        {navigationRoutes.map((route, index) => (
+          <Button
+            key={index}
+            variant={"navigation"}
+            className={cn(
+              currentRoute == route.path.split("/")[1] &&
+                "bg-neutral-100 text-blue-600"
+            )}
+            asChild
+          >
+            <Link href={route.path} target={route.isExternal ? "_blank" : ""}>
+              {route.title}
+            </Link>
+          </Button>
+        ))}
+      </div>
+
+      <div className="md:hidden flex flex-col items-center justify-center gap-1">
+        {navigationRoutes.map((route, index) => (
+          <Button
+            key={index}
+            variant={"navigation"}
+            className={cn(
+              currentRoute == route.path.split("/")[1] &&
+                "bg-neutral-100 text-blue-600"
+            )}
+            asChild
+          >
+            <Link href={route.path} target={route.isExternal ? "_blank" : ""}>
+              {route.title}
+            </Link>
+          </Button>
+        ))}
+      </div>
     </div>
   );
 };
