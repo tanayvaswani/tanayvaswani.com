@@ -37,12 +37,6 @@ const blogsInfo = [
     date: "24th September 2024",
     link: "https://www.google.com",
   },
-  {
-    title: "Blog Title",
-    description: "Blog Description",
-    date: "24th September 2024",
-    link: "https://www.google.com",
-  },
 ];
 
 const BlogSection = () => {
