@@ -39,7 +39,8 @@ const HeroSection = () => {
 
       <div>
         <p>
-          I’m currently learning about Machine Learning Systems at Scale.
+          I’m currently learning about Distributed & Machine Learning Systems at
+          Scale.
           <br />
           You can find me most active on{" "}
           <Link
